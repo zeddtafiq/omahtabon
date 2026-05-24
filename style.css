@@ -146,10 +146,10 @@ nav ul li a:hover::after{
   left:50%;
   transform:translate(-50%, -50%);
 
-  width:85%;
+  width:70%;
   max-width:1000px;
 
-  background:rgba(228, 239, 230, 0.7);
+  background:rgba(53, 58, 54, 0.7);
   padding:40px;
   border-radius:20px;
 
@@ -161,7 +161,7 @@ nav ul li a:hover::after{
 
 /* title */
 .overlay h1{
-  font-size:55px;
+  font-size:35px;
   margin-bottom:20px;
   font-weight:bold;
   line-height:1.2;
@@ -169,7 +169,7 @@ nav ul li a:hover::after{
 
 /* description */
 .overlay p{
-  font-size:20px;
+  font-size:15px;
   line-height:1.8;
 }
 
