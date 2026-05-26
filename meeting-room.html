@@ -1,14 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Meeting Room - Omah Tabon</title>
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="meeting-room.css">
+<title>Paket Meeting Room - Omah Tabon</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="style1.css">
+
+  <!-- FONT AWESOME -->
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
@@ -16,24 +21,28 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- ================= HEADER ================= -->
   <header>
 
     <div class="logo">
 
-      <img src="assets/logo1.jpeg" alt="Logo Omah Tabon">
+      <img src="assets/logo1.jpeg"
+      alt="Logo Omah Tabon">
 
       <span>OMAH TABON</span>
 
     </div>
 
+    <!-- NAVIGATION -->
     <nav>
 
       <ul>
 
         <li><a href="index.html">Home</a></li>
 
-        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="meeting-room.html">Meeting Room</a></li>
+
+        <li><a href="#tentang">Tentang Kami</a></li>
 
         <li><a href="#contact">Kontak</a></li>
 
@@ -43,52 +52,170 @@
 
   </header>
 
-  <!-- DETAIL -->
-  <section class="detail-page">
+  <!-- ================= HERO ================= -->
+  <section class="detail-hero">
 
-    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1"
-    alt="Meeting Room">
+  <img src="assets/bg-meetingroom.png"
+  alt="Paket Meeting Room">
 
-    <div class="detail-content">
+  <div class="hero-overlay">
+  </div>
 
-      <h1>Meeting Room</h1>
+</section>
 
-      <p>
-        Ruang meeting profesional untuk gathering,
-        rapat perusahaan, seminar, dan workshop.
-      </p>
+  <!-- ================= TENTANG PAKET ================= -->
+  <section class="about-package">
 
-      <p>
-        Dilengkapi fasilitas yang nyaman dan suasana yang tenang.
-      </p>
+  <h2>PAKET MEETING ROOM</h2>
 
-      <a href="index.html" class="back-btn">
-        ← Kembali ke Home
-      </a>
+  <p>
+    Paket Meeting Room Omah Tabon menyediakan fasilitas ruang
+    pertemuan yang nyaman dan representatif untuk berbagai kebutuhan,
+    seperti rapat perusahaan, seminar, workshop, pelatihan,
+    gathering organisasi, hingga acara komunitas. Didukung suasana alam yang asri dan fasilitas lengkap,
+    paket ini memberikan pengalaman meeting yang lebih produktif,
+    nyaman, dan berkesan bagi seluruh peserta.
+  </p>
+
+ 
+
+
+</section>
+  <!-- ================= GALERI SLIDER ================= -->
+  <section class="gallery-section">
+
+  <h2>GALERI MEETING ROOM</h2>
+
+    <div class="gallery-slider">
+
+      <!-- SLIDE 1 -->
+      <div class="gallery-slide active">
+
+        <img src="assets/paket-meeting1.jpg"
+        alt="Fun Games Anak">
+
+        <div class="gallery-content">
+
+
+ 
+        </div>
+
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="gallery-slide">
+
+        <img src="assets/paket-meeting2.jpg"
+        alt="Outdoor Learning">
+
+        <div class="gallery-content">
+
+
+
+        </div>
+
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="gallery-slide">
+
+        <img src="assets/paket-meeting3.jpg"
+        alt="Petualangan Anak">
+
+        <div class="gallery-content">
+
+
+        </div>
+
+      </div>
+
+   
+
+
+
+      <!-- BUTTON -->
+      <button class="gallery-prev">&#10094;</button>
+
+      <button class="gallery-next">&#10095;</button>
 
     </div>
 
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
+  <!-- ================= BOOKING ================= -->
+  <section class="booking-section">
+
+  <h2>Tertarik Dengan Paket Meeting Room?</h2>
+
+  <p>
+    Hubungi admin Omah Tabon sekarang untuk informasi fasilitas,
+    kapasitas ruangan, harga, dan reservasi Meeting Room.
+  </p>
+
+  <a href="https://wa.me/6281542622750?text=Halo%20Omah%20Tabon,%20saya%20ingin%20bertanya%20tentang%20Paket%20Meeting%20Room"
+  target="_blank"
+  class="booking-btn">
+
+    <i class="fab fa-whatsapp"></i>
+
+    Hubungi via WhatsApp
+
+  </a>
+
+</section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="tentang" class="about">
 
     <h2>Tentang Kami</h2>
 
     <p>
-      Omah Tabon menyediakan fasilitas terbaik untuk wisata,
-      kuliner, dan kegiatan profesional.
+      Omah Tabon merupakan tempat wisata keluarga
+      yang memadukan wisata alam, outbound,
+      edukasi, dan kuliner dalam satu lokasi.
     </p>
+
+    <div class="visi-misi">
+
+      <h3>VISI</h3>
+
+      <p class="visi">
+        Menjadi pilihan bahagia, wisatanya keluarga dengan memadukan
+        potensi sajian kuliner, alam, pendidikan, digital dan hobby.
+      </p>
+
+      <h3>MISI</h3>
+
+      <ul>
+
+        <li>
+          Menyediakan tempat wisata keluarga
+          yang humanis, cerdas dan profesional.
+        </li>
+
+        <li>
+          Memberikan edukasi dan pemberdayaan masyarakat.
+        </li>
+
+        <li>
+          Berkolaborasi dengan berbagai pihak
+          dalam pengembangan usaha.
+        </li>
+
+      </ul>
+
+    </div>
 
   </section>
 
-  <!-- CONTACT -->
+  <!-- ================= CONTACT ================= -->
   <section id="contact" class="contact">
 
     <h2>Kontak Kami</h2>
 
     <div class="contact-info">
 
+      <!-- EMAIL -->
       <p>
 
         <i class="fas fa-envelope"></i>
@@ -99,19 +226,76 @@
 
       </p>
 
+      <!-- WHATSAPP -->
       <p>
 
         <i class="fab fa-whatsapp"></i>
 
-        <a href="https://wa.me/6281542622750" target="_blank">
+        <a href="https://wa.me/6281542622750"
+        target="_blank">
+
           WhatsApp: +62 815-4262-2750
+
         </a>
 
       </p>
 
+      <!-- INSTAGRAM -->
+      <p>
+
+        <i class="fab fa-instagram"></i>
+
+        <a href="https://www.instagram.com/wisataomahtabon/"
+        target="_blank">
+
+          Instagram: @wisataomahtabon
+
+        </a>
+
+      </p>
+
+      <!-- FACEBOOK -->
+      <p>
+
+        <i class="fab fa-facebook"></i>
+
+        <a href="#">
+
+          Facebook: Omah Tabon Resto
+
+        </a>
+
+      </p>
+
+      <!-- TIKTOK -->
+      <p>
+
+        <i class="fab fa-tiktok"></i>
+
+        <a href="https://www.tiktok.com/@wisataomahtabon">
+
+          Tiktok : Wisataomahtabon    
+
+        </a>
+
+      </p>
+
+
     </div>
 
   </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+
+    <p>
+      © 2026 Omah Tabon. All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>

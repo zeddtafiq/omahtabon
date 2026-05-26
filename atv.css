@@ -78,12 +78,13 @@ nav ul li a:hover{
 ========================= */
 .detail-hero{
   width: 100%;
-  height: 500px;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
 .detail-hero img{
+  
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -172,7 +173,7 @@ nav ul li a:hover{
 /* CARD IMAGE */
 .package-card img{
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
   transition: 0.4s;
 }
