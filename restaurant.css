@@ -146,6 +146,7 @@ nav ul li a:hover{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:30px;
+
 }
 
 .package-card{
@@ -176,6 +177,7 @@ nav ul li a:hover{
   color:#6f4e37;
   margin-bottom:15px;
   font-size:1.5rem;
+  
 }
 
 .package-content p{
@@ -257,4 +259,29 @@ footer{
     font-size:2rem;
   }
 
+}
+
+/* Hilangkan garis bawah pada semua link di section menu */
+.packages a,
+.package-card a,
+.package-content a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Judul card */
+.package-content h3{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/* Jika judul dibungkus tag <a> */
+.package-content h3 a{
+    text-decoration: none;
+    color: #6f4e37;
+}
+
+/* Hilangkan underline pada paragraf */
+.package-content p{
+    text-decoration: none;
 }
