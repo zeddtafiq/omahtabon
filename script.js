@@ -6,6 +6,9 @@ const dots = document.querySelectorAll(".dot");
 
 let currentIndex = 0;
 
+
+
+
 /* SHOW SLIDE */
 function showSlide(index){
 
@@ -220,3 +223,5 @@ cards.forEach((card)=>{
   card.style.transition = "0.8s";
 
 });
+
+

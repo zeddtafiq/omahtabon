@@ -630,3 +630,227 @@ footer{
   color:#555;
   line-height:1.8;
 }
+
+
+.menu-toggle{
+  display:none;
+  color:white;
+  font-size:24px;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    margin-top:15px;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+}
+
+/* ===============================
+   TABLET
+================================= */
+@media (max-width:992px){
+
+  header{
+    padding:15px 5%;
+  }
+
+  .cards,
+  .facility-container{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* ===============================
+   MOBILE
+================================= */
+@media (max-width:768px){
+
+  /* HEADER */
+  header{
+    flex-direction:column;
+    padding:15px 20px;
+    gap:15px;
+  }
+
+  .logo{
+    justify-content:center;
+  }
+
+  nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  nav ul li a{
+    font-size:14px;
+  }
+
+  /* HERO */
+  .slider{
+    height:70vh;
+  }
+
+  .slide img{
+    height:70vh;
+  }
+
+  .overlay{
+    width:90%;
+    padding:20px;
+  }
+
+  .overlay h1{
+    font-size:2rem;
+  }
+
+  .overlay p{
+    font-size:0.95rem;
+  }
+
+  /* SECTION */
+  section{
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  /* DESTINATION */
+  .cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .card img{
+    height:220px;
+  }
+
+  /* ABOUT */
+  .about{
+    padding:70px 20px;
+  }
+
+  .about h2{
+    font-size:2rem;
+  }
+
+  .about p{
+    text-align:justify;
+  }
+
+  .visi-misi{
+    text-align:left;
+  }
+
+  /* FACILITY */
+  .facility-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .facility-card img{
+    height:220px;
+  }
+
+  /* MAP */
+  .map-container iframe{
+    height:300px;
+  }
+
+  /* CONTACT */
+  .contact{
+    padding:70px 20px;
+  }
+
+  .contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .contact-info p{
+    font-size:15px;
+  }
+
+  /* FOOTER */
+  footer{
+    padding:20px;
+    font-size:14px;
+  }
+
+  /* SLIDER BUTTON */
+  .prev,
+  .next{
+    width:45px;
+    height:45px;
+    font-size:20px;
+  }
+
+}
+
+/* ===============================
+   SMALL MOBILE
+================================= */
+@media (max-width:480px){
+
+  .logo img{
+    width:45px;
+    height:45px;
+  }
+
+  .logo span{
+    font-size:1rem;
+  }
+
+  .overlay h1{
+    font-size:1.5rem;
+  }
+
+  .overlay p{
+    font-size:0.85rem;
+  }
+
+  .destinations h2,
+  .about h2,
+  .facilities h2,
+  .contact h2,
+  .location h2{
+    font-size:1.7rem;
+  }
+
+  .card h3,
+  .facility-content h3{
+    font-size:1.2rem;
+  }
+
+  .card p,
+  .facility-content p{
+    font-size:14px;
+  }
+
+  .card img,
+  .facility-card img{
+    height:200px;
+  }
+
+  .map-container iframe{
+    height:250px;
+  }
+
+}
