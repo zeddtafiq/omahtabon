@@ -225,3 +225,19 @@ cards.forEach((card)=>{
 });
 
 
+/* ================= MOBILE MENU ================= */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-links");
+
+if(menuToggle){
+
+    menuToggle.addEventListener("click", ()=>{
+
+        navMenu.classList.toggle("active");
+
+    });
+
+}
+
+
