@@ -421,39 +421,94 @@ footer{
   }
 }
 
-@media(max-width:768px){
+@media (max-width: 768px){
 
-  header{
-    flex-direction:column;
-    gap:15px;
-  }
+    header{
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        padding:15px 20px;
+    }
 
-  nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
+    /* Hide logo on mobile if you want only hamburger */
+    .logo{
+        display:none;
+    }
 
-  .overlay{
-    padding:25px;
-  }
+    nav{
+        width:100%;
+        position:relative;
+    }
 
-  .overlay h1{
-    font-size:30px;
-  }
+    /* HAMBURGER - LEFT SIDE */
+    .menu-toggle{
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
 
-  .overlay p{
-    font-size:16px;
-  }
+        color:#fff;
+        font-size:28px;
+        cursor:pointer;
 
-  .destinations h2,
-  .about h2,
-  .contact h2{
-    font-size:32px;
-  }
+        z-index:1100;
+    }
 
-  .card img{
-    height:220px;
-  }
+    /* MOBILE MENU */
+    .nav-links{
+        position:absolute;
+
+        top:55px;
+        left:0;
+
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+        background:rgba(0,70,40,0.95);
+
+        border-radius:0 0 12px 12px;
+
+        overflow:hidden;
+
+        max-height:0;
+        opacity:0;
+
+        padding:0;
+
+        transition:
+            max-height .35s ease,
+            opacity .3s ease,
+            padding .3s ease;
+    }
+
+    .nav-links.active{
+        max-height:400px;
+        opacity:1;
+        padding:10px 0;
+    }
+
+    .nav-links li{
+        width:100%;
+        text-align:center;
+    }
+
+    .nav-links li a{
+        display:block;
+        width:100%;
+        padding:14px 20px;
+
+        color:#fff;
+        text-decoration:none;
+        font-size:16px;
+    }
+
+    .nav-links li a:hover{
+        background:#2f6f4b;
+        color:#ffe082;
+    }
 }
 
 @media(max-width:480px){
@@ -678,129 +733,175 @@ footer{
 /* ===============================
    MOBILE
 ================================= */
-@media (max-width:768px){
+/* =================================
+   MOBILE HEADER - OMAH TABON
+================================= */
 
-  /* HEADER */
-  header{
-    flex-direction:column;
-    padding:15px 20px;
-    gap:15px;
-  }
+@media (max-width: 768px){
 
-  .logo{
-    justify-content:center;
-  }
+    header{
+        position:fixed;
+        top:0;
+        left:0;
 
-  nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-  }
+        width:100%;
+        height:100px;
 
-  nav ul li a{
-    font-size:14px;
-  }
+        display:flex;
+        justify-content:center;
+        align-items:center;
 
-  /* HERO */
-  .slider{
-    height:70vh;
-  }
+        padding:10px -20px;
 
-  .slide img{
-    height:70vh;
-  }
+        background:rgba(0,70,40,0.90);
 
-  .overlay{
-    width:90%;
-    padding:20px;
-  }
+        z-index:1000;
+    }
 
-  .overlay h1{
-    font-size:2rem;
-  }
+    /* =========================
+       LOGO
+    ========================= */
 
-  .overlay p{
-    font-size:0.95rem;
-  }
+    .logo{
+        display:flex;
+        align-items:center;
+        justify-content:center;
 
-  /* SECTION */
-  section{
-    padding-left:20px;
-    padding-right:20px;
-  }
+        gap:8px;
 
-  /* DESTINATION */
-  .cards{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:20px;
-  }
+        z-index:1001;
+    }
 
-  .card img{
-    height:220px;
-  }
+    .logo img{
+        width:42px;
+        height:42px;
 
-  /* ABOUT */
-  .about{
-    padding:70px 20px;
-  }
+        object-fit:cover;
 
-  .about h2{
-    font-size:2rem;
-  }
+        border-radius:50%;
 
-  .about p{
-    text-align:justify;
-  }
+        border:2px solid #fff;
+    }
 
-  .visi-misi{
-    text-align:left;
-  }
+    .logo span{
+        display:block;
 
-  /* FACILITY */
-  .facility-container{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:25px;
-  }
+        color:#fff;
 
-  .facility-card img{
-    height:220px;
-  }
+        font-size:18px;
+        font-weight:bold;
 
-  /* MAP */
-  .map-container iframe{
-    height:300px;
-  }
+        letter-spacing:1px;
+    }
 
-  /* CONTACT */
-  .contact{
-    padding:70px 20px;
-  }
+    /* =========================
+       HAMBURGER
+    ========================= */
 
-  .contact-info{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-  }
+    nav{
+        position:absolute;
 
-  .contact-info p{
-    font-size:15px;
-  }
+        left:0;
+        top:0;
 
-  /* FOOTER */
-  footer{
-    padding:20px;
-    font-size:14px;
-  }
+        width:100%;
+        height:70px;
+    }
 
-  /* SLIDER BUTTON */
-  .prev,
-  .next{
-    width:45px;
-    height:45px;
-    font-size:20px;
-  }
+    .menu-toggle{
+        display:block;
+
+        position:absolute;
+
+        left:20px;
+        top:20px;
+
+        color:#fff;
+
+        font-size:28px;
+
+        cursor:pointer;
+
+        z-index:1100;
+    }
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    .nav-links{
+
+        position:absolute;
+
+        top:70px;
+        left:0;
+
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+
+        align-items:center;
+
+        background:rgba(0,70,40,0.97);
+
+        overflow:hidden;
+
+        max-height:0;
+
+        opacity:0;
+
+        padding:0;
+
+        transition:
+            max-height .4s ease,
+            opacity .3s ease,
+            padding .3s ease;
+    }
+
+    .nav-links.active{
+
+        max-height:400px;
+
+        opacity:1;
+
+        padding:10px 0;
+    }
+
+    .nav-links li{
+
+        width:100%;
+
+        text-align:center;
+
+        list-style:none;
+    }
+
+    .nav-links li a{
+
+        display:block;
+
+        width:100%;
+
+        padding:14px 20px;
+
+        color:#fff;
+
+        text-decoration:none;
+
+        font-size:16px;
+
+        font-weight:600;
+
+        transition:.3s;
+    }
+
+    .nav-links li a:hover{
+
+        background:#2f6f4b;
+
+        color:#ffe082;
+    }
 
 }
 

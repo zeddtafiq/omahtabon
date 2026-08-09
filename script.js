@@ -230,14 +230,27 @@ cards.forEach((card)=>{
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-links");
 
-if(menuToggle){
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
 
-    menuToggle.addEventListener("click", ()=>{
-
-        navMenu.classList.toggle("active");
-
+// Close menu after clicking a link
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
     });
+});
 
-}
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+
+    if(
+        !navMenu.contains(e.target) &&
+        !menuToggle.contains(e.target)
+    ){
+        navMenu.classList.remove("active");
+    }
+
+});
 
 
