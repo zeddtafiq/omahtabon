@@ -723,7 +723,9 @@ footer{
     padding:15px 5%;
   }
 
-  .cards,
+  .cards{
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  }
   .facility-container{
     grid-template-columns:repeat(2,2fr);
   }
